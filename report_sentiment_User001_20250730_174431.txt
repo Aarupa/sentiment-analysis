@@ -1,0 +1,56 @@
+📋 Voice Sentiment Report for User001
+🕒 Date: 2025-07-30 17:44:31
+============================================================
+
+Q1: How are you today?
+🗣️ Answer: I'm good.
+🎭 Emotion: joy
+🧠 Top Sentiments:
+   - admiration: 41.67
+   - joy: 13.00
+   - approval: 12.60
+🛡️ No moderation risks detected.
+
+Q2: Do you feel like working today?
+🗣️ Answer: Yes, sir.
+🎭 Emotion: joy
+🧠 Top Sentiments:
+   - approval: 36.43
+   - admiration: 18.92
+   - joy: 1.75
+🛡️ No moderation risks detected.
+
+Q3: How was your day yesterday?
+🗣️ Answer: Thank you very much.
+🎭 Emotion: joy
+🧠 Top Sentiments:
+   - gratitude: 99.37
+   - approval: 0.11
+   - admiration: 0.09
+🛡️ No moderation risks detected.
+
+Q4: Are you worried about anything?
+🗣️ Answer: No, I'm not.
+🎭 Emotion: anger
+🧠 Top Sentiments:
+   - disapproval: 59.65
+   - annoyance: 3.81
+   - disappointment: 3.29
+🛡️ No moderation risks detected.
+
+Q5: Are you ready to work today?
+🗣️ Answer: Yes, I am.
+🎭 Emotion: joy
+🧠 Top Sentiments:
+   - approval: 48.31
+   - realization: 3.23
+   - joy: 2.71
+🛡️ No moderation risks detected.
+
+📊 Summary Analysis:
+🔝 Most Frequent Strong Sentiments:
+   - gratitude: 109.39
+   - approval: 100.49
+   - admiration: 62.79
+
+✅ Summary: No major red flags.

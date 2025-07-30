@@ -1,0 +1,6 @@
+transformers
+torch
+soundfile
+speechrecognition
+pyaudio
+numpy

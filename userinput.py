@@ -1,3 +1,5 @@
+# userinput.py
+from .speech import get_voice_input, analyze_emotion_from_audio,moderation
 user_responses = []
 
 questions = [

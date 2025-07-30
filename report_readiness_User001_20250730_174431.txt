@@ -1,0 +1,10 @@
+🧠 Mental & Emotional Readiness Score Report
+👷 Worker ID: User001
+🕒 Date: 2025-07-30 17:44:31
+============================================================
+
+📊 Positive Z-Scores: ['0.34', '0.06', '1.24', '-1.53', '-0.11']
+📉 Negative Z-Scores: ['-0.45', '-0.45', '-0.45', '1.79', '-0.45']
+
+✅ Final Readiness Score: 49.70 / 100
+🔴 Status: Worker may not be mentally/emotionally ready.
