@@ -1,0 +1,56 @@
+📋 Voice Sentiment Report for User001
+🕒 Date: 2025-07-31 12:00:18
+============================================================
+
+Q1: How are you today?
+🗣️ Answer: Thank you very much.
+🎭 Emotion: joy
+🧠 Top Sentiments:
+   - gratitude: 99.37
+   - approval: 0.11
+   - admiration: 0.09
+🛡️ No moderation risks detected.
+
+Q2: Do you feel like working today?
+🗣️ Answer: So, yeah, yes, that will do. Yes, that will do. Yeah.
+🎭 Emotion: joy
+🧠 Top Sentiments:
+   - approval: 55.29
+   - optimism: 12.05
+   - admiration: 4.17
+🛡️ No moderation risks detected.
+
+Q3: How was your day yesterday?
+🗣️ Answer: What do I do?
+🎭 Emotion: anger
+🧠 Top Sentiments:
+   - curiosity: 47.67
+   - confusion: 21.34
+   - approval: 1.33
+🛡️ No moderation risks detected.
+
+Q4: Are you worried about anything?
+🗣️ Answer: Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah.
+🎭 Emotion: joy
+🧠 Top Sentiments:
+   - approval: 61.11
+   - admiration: 7.24
+   - realization: 4.76
+🛡️ No moderation risks detected.
+
+Q5: Are you ready to work today?
+🗣️ Answer: Thank you.
+🎭 Emotion: joy
+🧠 Top Sentiments:
+   - gratitude: 99.27
+   - approval: 0.09
+   - admiration: 0.06
+🛡️ No moderation risks detected.
+
+📊 Summary Analysis:
+🔝 Most Frequent Strong Sentiments:
+   - gratitude: 200.03
+   - approval: 117.93
+   - curiosity: 48.56
+
+✅ Summary: No major red flags.
