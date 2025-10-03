@@ -1,3 +1,6 @@
+import os
+from transformers import pipeline
+
 def get_score(question, scale_info):
     while True:
         try:
@@ -21,6 +24,38 @@ def get_yes_no_score(question):
             return 0
         else:
             print("❌ Invalid input. Please answer Yes or No.")
+
+def analyze_audio_sentiment(audio_file):
+    """Analyze audio file for sentiment using lightweight model"""
+    try:
+        # Initialize sentiment analysis pipeline
+        classifier = pipeline("audio-classification", model="superb/hubert-base-superb-er")
+        
+        # Run analysis
+        results = classifier(audio_file)
+        
+        # Get top emotion and score
+        top_emotion = results[0]['label']
+        emotion_score = results[0]['score']
+        
+        # Map emotion to our scoring system (0-35)
+        emotion_mapping = {
+            'angry': 5,
+            'disgust': 5,
+            'fear': 10,
+            'happy': 30,
+            'neutral': 20,
+            'sad': 10,
+            'surprise': 25
+        }
+        
+        # Calculate weighted score
+        mental_score = emotion_mapping.get(top_emotion.lower(), 15) * emotion_score
+        return min(35, max(0, mental_score))  # Ensure score is between 0-35
+    
+    except Exception as e:
+        print(f"❌ Error analyzing audio: {e}")
+        return 17.5  # Return neutral score if analysis fails
 
 def readiness_scoring():
     # Likert scale definition
@@ -51,7 +86,7 @@ def readiness_scoring():
         "7. I have no physical limitations that would affect my work today."
     ]
 
-    # Mental readiness questions (7 questions x 5 points each = 35 points)
+    # Text-based mental readiness questions (only used if audio not selected)
     mental_questions = [
         "8. I am feeling emotionally balanced and grounded.",
         "9. I am mentally present, focused, and not distracted.",
@@ -69,12 +104,31 @@ def readiness_scoring():
     behavior_question = "16. Do you have any past incidents of safety violations or concerning behavior?"
 
     print("\n📝 Physical Readiness Questions (1-7)")
-    physical_score = sum(get_score(q, likert_scale) for q in physical_questions) * 1.0  # Convert to float for scaling
+    physical_score = sum(get_score(q, likert_scale) for q in physical_questions) * 1.0
     physical_score = (physical_score / 35) * 35  # Scale to 35 points
 
-    print("\n📝 Mental Readiness Questions (8-14)")
-    mental_score = sum(get_score(q, likert_scale) for q in mental_questions) * 1.0
-    mental_score = (mental_score / 35) * 35  # Scale to 35 points
+    # Mental readiness assessment choice
+    print("\n🧠 Mental Readiness Assessment Method:")
+    print("1. Text-based questions (default)")
+    print("2. Audio-based sentiment analysis")
+    assessment_choice = input("Choose assessment method (1 or 2): ").strip()
+
+    if assessment_choice == "2":
+        # Audio-based assessment
+        audio_file = input("Enter path to your audio file (or press Enter to skip): ").strip()
+        if audio_file and os.path.exists(audio_file):
+            print("\n🎤 Analyzing your voice for emotional state...")
+            mental_score = analyze_audio_sentiment(audio_file)
+            print(f"🔹 Audio analysis complete. Mental readiness score: {mental_score:.1f}/35")
+        else:
+            print("⚠️ Using text-based assessment (invalid audio file)")
+            mental_score = sum(get_score(q, likert_scale) for q in mental_questions) * 1.0
+            mental_score = (mental_score / 35) * 35
+    else:
+        # Default text-based assessment
+        print("\n📝 Mental Readiness Questions (8-14)")
+        mental_score = sum(get_score(q, likert_scale) for q in mental_questions) * 1.0
+        mental_score = (mental_score / 35) * 35
 
     print("\n📝 Certification Status (Question 15)")
     certification_score = get_yes_no_score(certification_question)
